@@ -4,4 +4,6 @@ black
 pylint
 click
 numpy
+wikipedia
+ipython
 
