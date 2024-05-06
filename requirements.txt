@@ -3,4 +3,5 @@ pytest
 black
 pylint
 click
-numpygit add .
+numpy
+
