@@ -13,3 +13,4 @@ mlflow
 fastapi
 pydantic
 textblob
+#google-cloud-translate
