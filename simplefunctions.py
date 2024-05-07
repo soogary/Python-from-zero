@@ -3,16 +3,19 @@ def my_worker(fruit):
     meals = {"dinner": statement}
     return meals
 
+
 meal = my_worker("lemon")
 meal.keys()
 
 # function calling a subfunction
 
+
 def human(food):
     consume = food["dinner"]
     return consume
 
-my_meal=human(meal)
+
+my_meal = human(meal)
 print(f"i want my meal. It will be:{my_meal}")
 
 
