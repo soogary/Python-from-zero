@@ -12,10 +12,7 @@ import click
 @click.option(
     "--name", prompt="your wikipedia page to scrape", help="web page you want to scrape"
 )
-@click.option(
-    "--length", prompt="Number of sentences", help="number of sentences"
-)
-
+@click.option("--length", prompt="Number of sentences", help="number of sentences")
 def scrape(name="Microsoft", length=1):
     result = wikipedia.summary(name, sentences=length)
     click.echo(click.style(f"{result}:", bg="red", fg="blue"))

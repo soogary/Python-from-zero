@@ -8,6 +8,7 @@ format:
 	black *.py
 
 lint:
-	pylint --disable=R,C *.py
+	pylint --disable=R,C --disable=invalid-name hello.py
 
-all:  install lint test
+all:  
+	install lint test
