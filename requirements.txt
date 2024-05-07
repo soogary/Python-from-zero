@@ -7,4 +7,8 @@ numpy
 wikipedia
 ipython
 fire
+uvicorn
+mlflow
+fastapi
+pydantic
 
