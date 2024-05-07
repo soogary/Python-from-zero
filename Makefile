@@ -9,7 +9,7 @@ format:
 
 lint:
 #	pylint --disable=R,C --disable=invalid-name hello.py
-	pylint --disable=R,C --disable=invalid-name fire-cli.py
+	pylint --disable=invalid-name fire-cli.py
 
 all:  
 	install lint test
