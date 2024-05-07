@@ -1,8 +1,11 @@
 install:
 	pip install -r requirements.txt
+	python -m textblob.download_corpora
 
 test:
 	python -m pytest -vv test_hello.py
+	python -m pytest -vv --cov=nlp_textblob test_nlp_textblob.py
+
 
 format:
 	black *.py

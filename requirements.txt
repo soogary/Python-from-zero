@@ -1,5 +1,6 @@
 pandas
 pytest
+pytest-cov
 black
 pylint
 click
@@ -11,4 +12,4 @@ uvicorn
 mlflow
 fastapi
 pydantic
-
+textblob
