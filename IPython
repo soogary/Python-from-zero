@@ -1,0 +1,223 @@
+useful commands
+https://asd.gsfc.nasa.gov/Rodrigo.Nemmen/Rodrigo_Nemmens_Homepage/Links_files/ipython_quickref.pdf
+
+
+who? - displays objects in memory
+
+
+IPython – An enhanced Interactive Python – Quick Reference Card
+obj?, obj??
+?foo.*abc*
+%magic
+ Get help, or more help for object (also works as ?obj, ??obj).
+ List names in 'foo' containing 'abc' in them.
+ Information about IPython's 'magic' % functions.
+Magic functions are prefixed by %, and typically take their arguments without parentheses, quotes or even
+commas for convenience.
+Example magic function calls:
+%alias d ls -F
+alias d ls -F
+alist = %alias
+cd /usr/share
+%cd??
+ 'd' is now an alias for 'ls -F'
+ Works if 'alias' not a python name
+ Get list of aliases to 'alist'
+ Obvious. cd -<tab> to choose from visited dirs.
+ See help AND source for magic %cd
+System commands:
+
+!cp a.txt b/
+cp a.txt b/
+cp ${f}.txt $bar
+files = !ls /usr
+files.s, files.l, files.n
+ System command escape, calls os.system()
+ after %rehashx, most system commands work without !
+ Variable expansion in magics and system commands
+ Capture sytem command output
+ "a b c", ['a','b','c'], 'a\nb\nc'
+History:
+_i, _ii, _iii
+_i4, _ih[2:5]
+exec _i81
+%rep 81
+_, __, ___
+_dh
+_oh
+%hist
+ Previous, next previous, next next previous input
+ Input history line 4, lines 2-4
+ Execute input history line #81 again
+ Edit input history line #81
+ previous, next previous, next next previous output
+ Directory history
+ Output history
+ Command history. '%hist -g foo' search history for 'foo'
+Autocall:
+f 1,2
+/f 1,2
+,f 1 2
+;f 1 2
+ f(1,2)
+ f(1,2) (forced autoparen)
+ f("1","2")
+ f("1 2")
+Remember: TAB completion works in many contexts, not just file names or python names.
+The following magic functions are currently available:
+%Exit
+%Pprint
+%Quit
+%alias
+%autocall
+%autoindent
+%automagic
+%bg
+%bookmark
+%cd
+%clear
+ Exit IPython without confirmation.
+ Toggle pretty printing on/off.
+ Exit IPython without confirmation (like %Exit).
+ Define an alias for a system command.
+ Make functions callable without having to type parentheses.
+ Toggle autoindent on/off (if available).
+ Make magic functions callable without having to type the initial %.
+ Run a job in the background, in a separate thread.
+ Manage IPython's bookmark system.
+ Change the current working directory.
+ Clear various data (e.g. stored history data)
+%color_info
+%colors
+%cpaste
+%debug
+%dhist
+%dirs
+%doctest_mode
+%ed
+%edit
+%env
+%exit
+%hist
+%history
+%logoff
+%logon
+%logstart
+%logstate
+%logstop
+%lsmagic
+%macro
+%magic
+%p
+%page
+%pdb
+%pdef
+%pdoc
+%pfile
+%pinfo
+%popd
+%profile
+%prun
+%psearch
+%psource
+%pushd
+%pwd
+%pycat
+%quickref
+%quit
+%r
+%rehash
+%rehashx
+%rep
+%reset
+%run
+%runlog
+%save
+%sc
+%store
+%sx
+%system_verbose
+%time
+%timeit
+%unalias
+%upgrade
+%who
+%who_ls
+%store
+%sx
+%system_verbose
+%time
+%timeit
+%unalias
+%upgrade
+%who
+%who_ls
+%whos
+%xmode
+ Toggle color_info.
+ Switch color scheme for prompts, info system and exception handlers.
+ Allows you to paste & execute a pre-formatted code block from clipboard.
+ Activate the interactive debugger in post-mortem mode.
+ Print your history of visited directories.
+ Return the current directory stack.
+ Toggle doctest mode on and off.
+ Alias to %edit.
+ Bring up an editor and execute the resulting code.
+ List environment variables.
+ Exit IPython, confirming if configured to do so.
+ Alternate name for %history.
+ Print input history (_i<n> variables), with most recent last.
+ Temporarily stop logging.
+ Restart logging.
+ Start logging anywhere in a session.
+ Print the status of the logging system.
+ Fully stop logging and close log file.
+ List currently available magic functions.
+ Define a set of input lines as a macro for future re-execution.
+ Print information about the magic function system.
+ Just a short alias for Python's 'print'.
+ Pretty print the object and display it through a pager.
+ Control the automatic calling of the pdb interactive debugger.
+ Print the definition header for any callable object.
+ Print the docstring for an object.
+ Print (or run through pager) the file where an object is defined.
+ Provide detailed information about an object.
+ Change to directory popped off the top of the stack.
+ Print your currently active IPyhton profile.
+ Run a statement through the python code profiler.
+ Search for object in namespaces by wildcard.
+ Print (or run through pager) the source code for an object.
+ Place the current dir on stack and change directory.
+ Return the current working directory path.
+ Show a syntax-highlighted file through a pager.
+ Show a quick reference sheet
+ Exit IPython, confirming if configured to do so (like %exit)
+ Repeat previous input.
+ Update the alias table with all entries in $PATH.
+ Update the alias table with all executable files in $PATH.
+ Repeat a command, or get command to input line for editing
+ Resets the namespace by removing all names defined by the user.
+ Run the named file inside IPython as a program.
+ Run files as logs.
+ Save a set of lines to a given filename.
+ Shell capture - execute a shell command and capture its output.
+ Lightweight persistence for python variables.
+ Shell execute - run a shell command and capture its output.
+ Set verbose printing of system calls.
+ Time execution of a Python statement or expression.
+ Time execution of a Python statement or expression
+ Remove an alias
+ Upgrade your IPython installation
+ Print all interactive variables, with some minimal formatting.
+ Shell capture - execute a shell command and capture its output.
+ Lightweight persistence for python variables.
+ Shell execute - run a shell command and capture its output.
+ Set verbose printing of system calls.
+ Time execution of a Python statement or expression.
+ Time execution of a Python statement or expression
+ Remove an alias
+ Upgrade your IPython installation
+ Print all interactive variables, with some minimal formatting.
+ Return a sorted list of all interactive variables.
+ Like %who, but gives some extra information about each variable.
+ Switch modes for the exception handlers. 
