@@ -1,3 +1,12 @@
+## Step 1: Configure environment
+
+- Configure GitHub codespace or equivalent (Cloud9, etc) 
+- Create scaffold structure of project (makefilem requirements.txt
+- Optional (setup virtualenv env and iPhython separaet from requirements.txt)
+
+
+
+
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=526669888)
 
 # Python Codespace Template
