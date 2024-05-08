@@ -13,4 +13,5 @@ mlflow
 fastapi
 pydantic
 textblob
+geopy
 #google-cloud-translate
