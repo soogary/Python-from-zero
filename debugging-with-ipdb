@@ -1,0 +1,9 @@
+x = 1
+y = 2
+import ipdb; ipdb.set_trace()
+#insert a breakpoint and allows checks and experiementation
+
+print(x,y)
+
+e.g. at ipdb command line type x & Enter, 
+when finished Enter n to step thru code 
